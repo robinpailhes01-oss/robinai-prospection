@@ -19,7 +19,7 @@ pdf.set_font("Helvetica", "", 10)
 pdf.cell(0, 6, f"Liste de prospection - {len(data)} contacts", ln=1, align="C")
 pdf.ln(4)
 
-col_widths = [50, 55, 55, 18, 30, 28, 42]
+col_widths = [48, 62, 42, 16, 28, 26, 56]
 line_height = 5
 
 def draw_row(values, fill=False, bold=False):
