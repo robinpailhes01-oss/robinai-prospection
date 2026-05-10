@@ -1,0 +1,192 @@
+# Tutoriel YAMM (Yet Another Mail Merge)
+# Pour envoyer 283 mails personnalisés depuis harmonieyacht@gmail.com
+
+================================================================================
+ÉTAPE 1 — INSTALLATION (5 min)
+================================================================================
+
+1. Va sur https://workspace.google.com/marketplace/app/yet_another_mail_merge_yamm/52669349336
+   (ou cherche "YAMM" dans Google Workspace Marketplace)
+
+2. Clique "Installer"
+   → Connecte-toi avec harmonieyacht@gmail.com
+   → Accepte les permissions
+
+3. Tu devrais voir l'addon dans Google Sheets désormais (menu Extensions)
+
+
+================================================================================
+ÉTAPE 2 — IMPORT DU CSV DANS GOOGLE SHEETS (3 min)
+================================================================================
+
+1. Ouvre Google Sheets (sheets.google.com)
+
+2. Crée un nouveau Sheet vierge
+
+3. Fichier > Importer > Téléversement > sélectionne `gmass-yamm-import.csv`
+
+4. Options d'import :
+   - Type d'import : "Remplacer la feuille de calcul"
+   - Délimiteur : "Détecter automatiquement" (ou "Virgule")
+   - Convertir le texte en nombres : DÉCOCHER (sinon les téléphones se cassent)
+
+5. Clique "Importer les données"
+
+6. Vérifie que les colonnes Email, Subject, Body sont bien remplies sur les
+   premières lignes (regarde 5-10 lignes au hasard)
+
+
+================================================================================
+ÉTAPE 3 — PREMIER ENVOI (test sur 5 leads)
+================================================================================
+
+⚠️ NE LANCE PAS L'ENVOI SUR LES 283 D'UN COUP. Fais un test d'abord.
+
+1. Dans le Sheet, masque temporairement les lignes 7 à fin (clic droit sur
+   numéro de ligne > Masquer) pour ne garder que 5 lignes de test
+
+2. Menu Extensions > YAMM > Démarrer la fusion
+
+3. Configure l'envoi :
+   - "Nom de l'expéditeur" : Robin & Ludivine
+   - "Adresse email expéditeur" : harmonieyacht@gmail.com
+   - "Modèle d'email" : Choisir → vide (le corps est dans la colonne Body)
+   - **CRUCIAL** : coche "Utiliser le contenu de la colonne Body comme corps"
+   - Aussi : coche "Utiliser le contenu de la colonne Subject comme objet"
+
+4. Clique "Recevoir un email test" pour t'envoyer 1 mail à toi-même
+   → Vérifie que le rendu est OK (saut de lignes, signature, accents)
+
+5. Si OK, clique "Envoyer 5 e-mails"
+   → Les 5 partent depuis harmonieyacht@gmail.com
+   → Vérifie dans ton dossier Envoyés Gmail
+
+6. Attends 1h, puis vérifie le Sheet :
+   - YAMM remplit auto les colonnes "Date_envoi" et "Ouvert"
+
+
+================================================================================
+ÉTAPE 4 — RYTHME D'ENVOI RÉEL
+================================================================================
+
+Plan d'envoi sur 12-15 jours :
+
+| Jour | Quantité | Cumul |
+|------|----------|-------|
+| J1   | 15-20    | 20    |
+| J2   | 20       | 40    |
+| J3   | 20       | 60    |
+| J4   | 30       | 90    |
+| J5   | 30       | 120   |
+| J6-7 | (week-end : pas d'envoi !) |
+| J8   | 40       | 160   |
+| J9   | 40       | 200   |
+| J10  | 40       | 240   |
+| J11  | 43       | 283   |
+
+⏰ HEURES OPTIMALES : mardi-jeudi entre 9h-11h ou 14h-16h
+❌ ÉVITE : lundi matin (boîtes encombrées), vendredi après-midi, week-ends
+
+📅 COMMENT FRACTIONNER l'envoi YAMM :
+- Avant chaque session d'envoi, masque les lignes des leads déjà envoyés
+- Ne sélectionne que les lignes à envoyer ce jour
+- YAMM enverra à toutes les lignes VISIBLES non envoyées
+
+
+================================================================================
+ÉTAPE 5 — SUIVI DES KPI
+================================================================================
+
+YAMM remplit automatiquement dans le Sheet :
+- Date_envoi
+- Ouvert (date+heure de la 1ère ouverture)
+- Clique (si tu as mis des liens trackés)
+
+Toi tu remplis manuellement :
+- Repondu (oui / non / stop)
+- Statut (À_relancer / Offre_envoyée / Client / OPT_OUT)
+- Date_M2 (à remplir quand tu envoies la relance J+5)
+- Date_M3 (à remplir quand tu envoies J+12)
+- Notes (date booking, contact direct, anecdotes)
+
+KPI à viser :
+- Taux d'ouverture : 35-55%
+- Taux de réponse : 3-8% sur la séquence complète
+- Taux de bounce : <3%
+
+Si bounce >5% → ta liste a des emails morts, faut nettoyer.
+Si ouverture <25% → tes objets ne donnent pas envie, à retravailler.
+
+
+================================================================================
+ÉTAPE 6 — GESTION DES RÉPONSES
+================================================================================
+
+Quand quelqu'un te répond :
+
+1. **Si "OUI"** : tu as 24h pour envoyer ton offre détaillée
+   → Utilise les templates dans `templates-relances.txt`
+   → Marque "Offre_envoyée" dans le Sheet
+
+2. **Si "STOP" / "Pas intéressé"** :
+   → Réponds 1 fois "Bien noté, bonne continuation"
+   → Marque "OPT_OUT" dans le Sheet
+   → NE LE RECONTACTE JAMAIS (RGPD)
+
+3. **Si réponse intermédiaire** ("recontactez-moi en septembre", "je passe le
+   mail à mon associé", etc.) :
+   → Marque "À_relancer_DATE" et la date dans Notes
+   → Utilise un rappel Gmail (clic droit sur le mail > "Reporter")
+
+
+================================================================================
+ÉTAPE 7 — RELANCES J+5 ET J+12
+================================================================================
+
+5 jours après l'envoi initial, filtre dans le Sheet :
+- Date_envoi >= J-5
+- Repondu == vide
+
+→ Pour chaque ligne, va dans Gmail, ouvre le fil envoyé, et réponds avec
+  le template M2 de `templates-relances.txt`.
+
+YAMM ne fait pas les relances auto sur le free tier — c'est manuel.
+
+Astuce : utilise le filtre Gmail "is:sent" + nom de l'entreprise pour
+retrouver vite le fil.
+
+12 jours après le M1, même chose avec le template M3.
+
+
+================================================================================
+ALERTES IMPORTANTES
+================================================================================
+
+🚨 SI GMAIL TE LIMITE : si tu vois "Daily limit exceeded", arrête.
+   Reprends 24h après. Tu approches sûrement les 500 mails/jour.
+
+🚨 SI TES MAILS ATTERRISSENT EN SPAM (envoie un test à un ami au début) :
+   - Vérifie que ton DNS est OK (aspmx.l.google.com)
+   - Réduis le rythme à 10/jour pour 1 semaine
+   - Évite mots déclencheurs : "gratuit", "promo", "offre limitée", "100%",
+     trop de majuscules ou de !!!
+
+🚨 RGPD : tiens un fichier des OPT-OUT (les "STOP" reçus). Ces personnes ne
+   doivent JAMAIS recevoir un autre email de prospection de ta part.
+
+
+================================================================================
+RÉSUMÉ ULTRA-RAPIDE (TLDR)
+================================================================================
+
+1. Installer YAMM (5 min)
+2. Importer gmass-yamm-import.csv dans Google Sheets (3 min)
+3. Test sur 5 leads (10 min)
+4. Envoyer 15-20/jour les 2 premières semaines, puis 30-40/jour
+5. Relancer J+5 (M2) et J+12 (M3) manuellement
+6. Quand "OUI" → offre détaillée sous 24h (templates prêts)
+7. Quand "STOP" → opt-out, plus jamais
+
+Total temps de gestion : 30-45 min/jour pendant 2-3 semaines.
+
+Bon courage Robin & Ludivine ! 🚤

@@ -1,0 +1,195 @@
+# Templates de relance — Phase 2 et 3
+# Harmonie Yacht — Cold email
+# Signature : Robin & Ludivine — Harmonie Yacht — Port de Carnon
+
+================================================================================
+RELANCE M2 — À ENVOYER J+5 (5 JOURS APRÈS LE MAIL #1)
+================================================================================
+
+Cible : tous les leads qui n'ont PAS répondu au mail #1 (ni "oui" ni "stop").
+Format : ULTRA COURT, en réponse au fil du mail #1 (laisse Gmail conserver
+l'historique en dessous).
+
+--- TEMPLATE M2 ---
+
+Objet : (laisser vide — la réponse Gmail garde "Re: {Sujet du M1}")
+
+Bonjour {Prénom},
+
+Juste un petit mot pour être sûr que mon précédent mail ne soit pas
+tombé dans une catégorie spams un peu zélée.
+
+Aucun engagement de votre côté — un simple « oui » et je vous envoie
+notre formule {ou notre offre partenaire — selon segment}.
+
+Belle journée,
+Robin & Ludivine — Harmonie Yacht
+Port de Carnon
+
+--- FIN TEMPLATE M2 ---
+
+
+VARIATIONS POSSIBLES (à utiliser pour ~15% des relances pour casser le pattern) :
+
+— Variation A (familière) :
+Bonjour {Prénom},
+Je relance ma précédente, juste au cas où elle se serait perdue dans
+une boîte chargée. Pas de pression — un « oui » suffit pour que je
+vous envoie ma proposition.
+Belle journée, Robin & Ludivine.
+
+— Variation B (curieuse) :
+Bonjour {Prénom},
+Je me permets une petite relance — peut-être que ma proposition n'est
+pas le bon timing chez vous, ou que ce n'est juste pas pertinent. Une
+réponse en 2 mots me suffit pour ajuster.
+Bonne journée, Robin & Ludivine.
+
+
+================================================================================
+RELANCE M3 — À ENVOYER J+12 (12 JOURS APRÈS LE M1)
+================================================================================
+
+Cible : ceux qui n'ont toujours pas répondu après le M2.
+Format : preuve sociale + offre limitée. Toujours en réponse au fil.
+
+--- TEMPLATE M3 ---
+
+Objet : (laisser vide — fil du mail #1)
+
+Bonjour {Prénom},
+
+Je tente une dernière fois — promis, après je vous laisse tranquille :)
+
+Pour vous donner une idée du format, on a fait sortir la semaine dernière
+un cabinet de conseil de Montpellier (8 personnes, demi-journée). Retour
+parfait, et déjà une seconde date prévue.
+
+Si vous voulez explorer pour {votre équipe / vos clients}, j'ai encore
+quelques créneaux libres en {avril-mai-juin} (à voir selon vos dates).
+
+Une simple réponse « oui » suffit.
+
+Belle journée,
+Robin & Ludivine — Harmonie Yacht
+Port de Carnon
+
+--- FIN TEMPLATE M3 ---
+
+
+VARIATION POUR LES SEGMENT C (PARTENAIRES) :
+
+Bonjour {Prénom},
+
+Dernière relance promis. Pour vous donner une idée concrète : on a déjà
+conventionné avec 2 traiteurs et 1 wedding planner sur Montpellier —
+chacun touche entre 10% et 15% sur les sorties qu'ils nous amènent.
+
+Si l'idée d'ajouter une carte « yacht » à votre offre vous parle, dites
+juste « oui » — j'envoie le détail du partenariat.
+
+Belle journée,
+Robin & Ludivine — Harmonie Yacht
+Port de Carnon
+
+
+================================================================================
+APRÈS LE M3
+================================================================================
+
+Si pas de réponse après le M3 (J+25 ~) :
+- Marque le lead "STOP_PROSPECTION" dans ton tracker
+- Le ressors dans 6 mois (saison opposée — ex: leads non répondus en
+  hiver à reprendre en été pour la saison suivante)
+
+
+================================================================================
+GESTION DES RÉPONSES "OUI"
+================================================================================
+
+QUAND UN LEAD RÉPOND "OUI" → tu as 24h pour répondre avec ta vraie offre.
+
+Pour gagner du temps, prépare en avance ces 2 templates d'OFFRE :
+
+--- OFFRE A — B2C / SEGMENTS A, B, D, E ---
+
+Bonjour {Prénom},
+
+Génial, merci pour votre retour ! Comme promis, voici notre formule.
+
+Le yacht :
+- {Modèle bateau, longueur, capacité 10 pers max}
+- Port d'attache : Carnon
+- Skipper professionnel inclus
+
+Nos formules :
+- **Demi-journée (4h)** : XXX € HT - cocktail, sortie côtière, retour
+- **Journée complète (8h)** : XXXX € HT - mouillage déjeuner inclus
+- **Soirée coucher de soleil (3h)** : XXX € HT - apéritif au large
+
+En option : traiteur partenaire, photographe, animation musicale, dégustation
+de vins du Languedoc.
+
+Vos prochaines dates ouvertes :
+{liste 3-4 créneaux}
+
+Je peux vous bloquer un créneau si une date vous intéresse. Sinon, dites-moi
+votre période visée et on s'arrange.
+
+Belle journée,
+Robin & Ludivine — Harmonie Yacht
+www.{site_si_existe}.fr / 06 XX XX XX XX
+
+--- FIN OFFRE A ---
+
+
+--- OFFRE B — PARTENAIRES / SEGMENT C ---
+
+Bonjour {Prénom},
+
+Super, merci pour votre retour ! Voici comment on travaille avec nos
+partenaires.
+
+Le yacht :
+- {Modèle, longueur, 10 pers max}
+- Port d'attache : Carnon
+- Skipper inclus
+
+Tarifs HT (que vous facturez à votre client, marge à votre main) :
+- Demi-journée : XXX €
+- Journée : XXXX €
+- Soirée : XXX €
+
+Vous touchez : **15% de commission** sur tout client que vous nous
+amenez (déduit avant facturation, ou rétrocédé après si vous préférez
+facturer en direct).
+
+On peut aussi co-brander la prestation si vous voulez l'inclure dans
+vos packages (ex: « formule mariage Manava + yacht Harmonie »).
+
+J'ai mis en pièce jointe :
+- Notre catalogue PDF
+- Le contrat de partenariat type (1 page, simple)
+
+On en discute par téléphone quand vous voulez ?
+
+Belle journée,
+Robin & Ludivine — Harmonie Yacht
+www.{site_si_existe}.fr / 06 XX XX XX XX
+
+--- FIN OFFRE B ---
+
+
+================================================================================
+RÉPONSES NÉGATIVES — GESTION
+================================================================================
+
+Si quelqu'un répond "STOP" / "Pas intéressé" / "Désinscrivez-moi" :
+1. Réponds une seule fois : "Bien noté, je vous laisse tranquille — bonne
+   continuation." (rester pro, c'est gratuit, et ils peuvent reparler de
+   toi à un confrère)
+2. Marque le lead "OPT_OUT" dans ton tracker — NE JAMAIS le recontacter
+3. Si tu utilises GMass/YAMM : retire-le manuellement de toutes les
+   séquences
+
+================================================================================
